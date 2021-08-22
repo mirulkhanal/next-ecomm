@@ -14,7 +14,10 @@ const Product = ({ product }) => {
         <span className='card-title'>{product.name}</span>
       </div>
       <div className='card-content'>
-        <p>{product.description}</p>
+        <p>
+          {product.description} <br />
+          ID: {product._id}
+        </p>
       </div>
       <div className='card-action'>
         <Link href='#'>
